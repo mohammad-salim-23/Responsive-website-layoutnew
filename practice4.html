@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border:2px solid aqua;
+            max-width:1160px;
+            margin:0 auto;
+        }
+          .photo1,.photo2{
+            display: flex;
+          }
+          .photo1{
+            margin-bottom:10px;
+          }
+          button{
+            background-color: blue;
+          }
+          img{
+            width:80%;
+          }
+          @media screen and (max-width:576px) {
+            .photo1{
+                flex-direction: column;
+            }
+            .photo2{
+                flex-direction: column;
+
+            }
+          }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="photo1">
+        <img src="lion.jpg" alt="">
+        <div>
+        <h3>Salim Boss</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam qui quae at. Nobis, quibusdam.</p>
+        <button>Buy Now</button>
+    </div>
+    </div>
+    <div class="photo2">
+        <img src="healthyfood.jpg" alt="">
+        <div>
+        <h3>Salim Boss</h3>
+        <p>Incidunt excepturi fuga quibusdam eum velit, delectus fugit. Nostrum, veniam? Blanditiis culpa tempora quibusdam. Placeat?</p>
+        <button>Buy Now</button>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

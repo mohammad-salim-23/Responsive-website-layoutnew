@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            row-gap: 10px;
+        }
+        img{
+            width:100%;
+        }
+        .layout1,.layout2{
+            display: flex;
+        }
+        .layout1 img,.layout2 img{
+            margin-right: 10px;;
+        }
+        
+        @media screen and (max-width:576px){
+            .layout1{
+                flex-direction: column;
+            }
+            .layout2{
+                flex-direction: column-reverse;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="layout1">
+        <div class="img-container"><img src="jerry.jpg" alt=""></div>
+        <div class="text-container">
+            <h3>Jerry</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium quas voluptatem doloremque culpa! Accusamus consequatur doloremque, dignissimos dolores sapiente praesentium.</p>
+        </div>
+    </div>
+        <div class="layout2">
+            <div class="text-container">
+                <h3>Exam fun</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel nobis architecto quo fugit earum, nisi facilis nesciunt ea perspiciatis.</p>
+            </div>
+            <div class="img-container">
+                <img src="funny.jpg" alt="">
+            </div>
+      
+       </div>
+    </div>
+</body>
+
+</html>
